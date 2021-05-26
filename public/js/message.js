@@ -3,7 +3,7 @@
 // const IP = "172.20.10.2";
 // const PORT = 3000;
 // const URL_REQUEST = "http://" + IP + ":" + PORT;
-const URL_REQUEST = "https://thy-sak-chatapp.herokuapp.com";
+const URL_REQUEST = "thy-sak-chatapp.herokuapp.com";
 
 let user_login = localStorage.getItem("username");
 
