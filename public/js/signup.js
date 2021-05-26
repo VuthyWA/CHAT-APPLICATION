@@ -1,8 +1,8 @@
 
-const IP = "172.20.10.2";
-const PORT = 3000;
-const URL_REQUEST = "http://" + IP + ":" + PORT;
-// const URL_REQUEST = "https://sv1communication.herokuapp.com";
+// const IP = "172.20.10.2";
+// const PORT = 3000;
+// const URL_REQUEST = "http://" + IP + ":" + PORT;
+const URL_REQUEST = "https://sv1communication.herokuapp.com";
 // SIGN UP PAGE
 let err_txt = document.querySelector(".error-txt");
 let firstName = document.querySelector("#firstName");
