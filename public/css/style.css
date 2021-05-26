@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+.wrapper {
+    background: #fff;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+/* SINGUP FORM CSS CODE AND LOGIN FORM*/
+
+
+.form {
+    padding: 25px 38px;
+}
+.form header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.form form {
+    margin: 20px 0;
+}
+.form form .error-txt {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+.form form .name-details {
+    display: flex;
+}
+form .name-details .field:first-child {
+    margin-right: 5px;
+}
+form .name-details .field:last-child {
+    margin-left: 5px;
+}
+.form form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form form .field input {
+    outline: none;
+}
+.form form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form form .button input {
+    margin-top: 13px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a {
+    color: #333;
+}
+
+/* CHAT AREA CSS CODE */
+
+.user {
+    padding: 25px 30px;
+}
+.user header,
+.user-list a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightslategray;
+}
+.wrapper img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user header .content,
+.user-list a .content {
+    display: flex;
+    align-items: center;
+}
+.user header .content img {
+    height: 50px;
+    width: 50px;
+}
+.user header .details,
+.user-list a .content .details,
+.chat-area header .details {
+    margin-left: 15px;
+    color: #000;
+}
+.user header .details span,
+.user-list a .content .details span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.user header .details p {
+    color: green;
+    font-size: 16px;
+}
+.user header .logout {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 15px;
+    background: #333;
+    border-radius: 5px;
+}
+.user .search {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user .search input {
+    height: 42px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+.user-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+.user-list::-webkit-scrollbar {
+    width: 0;
+}
+.user-list a {
+    margin-bottom: 10px;
+    padding-right: 15px;
+    border-bottom-color: #f1f1f1;
+}
+.user-list a .content img {
+    height: 40px;
+    width: 40px;
+}
+.user-list a .content p {
+    color: #67676a;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.user-list a .status-dot {
+    font-size: 12px;
+    color: green;
+}
+/* .user-list a .status-dot {
+    font-size: 12px;
+    color: #ccc;
+} */
+
+/* CHAT AREA CSS CODE */
+.chat-area header {
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+.chat-area header .back-icon {
+    font-size: 18px;
+    color: #333;
+}
+.chat-area header img {
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+.chat-area header span {
+    font-size: 17px;
+    font-weight: 500;
+}
+.chat-box {
+    height: 400px;
+    background: #ebebeb;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+                inset 0 -32px  32px -32px -32px rgb(0 0 0 / 5%);
+    overflow-y: scroll;
+}
+
+.chat-box .container .chat {
+    margin: 15px 0;
+}
+.chat-box .container .chat p {
+    word-wrap: break-word;
+    padding:  8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0 16px -16px rgb(0 0 0 / 10%);
+}
+.chat-box .container .outgoing {
+    display: flex;
+    align-items: flex-end;
+}
+.chat-box .container .outgoing h5 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    padding: 5px 10px;
+    font-size: 8px;
+    border-radius: 18px 18px 18px 0;
+}
+.outgoing .details {
+    margin-right: 5px;
+    margin-left: auto;
+    max-width: calc(100% - 160px);
+}
+.outgoing .details p {
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+
+}
+.chat-box .container .incoming {
+    display: flex;
+    align-items: flex-end;
+}
+.chat-box .container .incoming h5 {
+    background: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 18px 18px 0 18px;
+    font-size: 8px;
+}
+.incoming .details {
+    margin-left: 5px;
+    max-width: calc(100% - 160px);
+    margin-right: auto;
+}
+.incoming .details p {
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+}
+.chat-area .typing-area {
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.typing-area input {
+    height: 45px;
+    width: calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px;
+    outline: none;
+}
+.typing-area button {
+    width: 55px;
+    border: none;
+    outline: none;
+    background: #33333380;
+    color: white;
+    font-size: 19px;
+    border-radius: 0 5px 5px 0;
+}
+.typing-area .fa-bold,
+.typing-area .fa-italic,
+.typing-area .fa-smile-o {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    border: none;
+    outline: none;
+    background: #33333380;
+    color: white;
+    cursor: pointer;
+    margin: 0 2px 2px 0;
+    border-radius: 5px;
+}
+.typing-area .fa-smile-o {
+    color: yellow;
+}
