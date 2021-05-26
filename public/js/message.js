@@ -3,7 +3,7 @@
 // const IP = "172.20.10.2";
 // const PORT = 3000;
 // const URL_REQUEST = "http://" + IP + ":" + PORT;
-const URL_REQUEST = "https://sv1communication.herokuapp.com";
+const URL_REQUEST = "https://thy-sak-chatapp.herokuapp.com";
 
 let user_login = localStorage.getItem("username");
 
@@ -73,5 +73,5 @@ let send_btn = document.querySelector("#send");
 send_btn.addEventListener("click", send_data);
 
 
-setInterval(loadMessage, 100);
+setInterval(loadMessage, 4000);
 chat_box.scrollTop = chat_box.scrollHeight - chat_box.clientHeight;

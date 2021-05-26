@@ -3,7 +3,7 @@
 // const PORT = 3000;
 // const URL_REQUEST = "http://" + IP + ":" + PORT;
 
-// // const URL_REQUEST = "https://sv1communication.herokuapp.com";
+// // const URL_REQUEST = "https://thy-sak-chatapp.herokuapp.com";
 // // LOGIN
 
 // let username = document.querySelector("#name");
