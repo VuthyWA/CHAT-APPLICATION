@@ -2,14 +2,14 @@
 // const IP = "172.20.10.2";
 // const PORT = 3000;
 // const URL_REQUEST = "http://" + IP + ":" + PORT;
-const URL_REQUEST = "thy-sak-chatapp.herokuapp.com";
+const URL_REQUEST = "https://thy-sak-chatapp.herokuapp.com";
 // SIGN UP PAGE
 let err_txt = document.querySelector(".error-txt");
 let firstName = document.querySelector("#firstName");
 let lastName = document.querySelector("#lastName");
 let mail = document.querySelector("#mail");
 let password = document.querySelector("#password");
-let btn_signup = document.querySelector("#signup");
+let btn_sign_up = document.querySelector("#signup");
 
 function signupFunction(){
     localStorage.setItem("username",firstName.value);
@@ -31,5 +31,5 @@ function signupFunction(){
         };
     });
 }
-btn_signup.addEventListener("click", signupFunction);
+btn_sign_up.addEventListener("click", signupFunction);
 

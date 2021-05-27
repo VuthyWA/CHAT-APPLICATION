@@ -11,16 +11,16 @@ app.use(express.urlencoded());
 
 let datas = JSON.parse(fs.readFileSync("datas.json"));
 // GET DATA FROM SIGN UP
-app.post("/signup", (req, res) =>{
-    let could_signup = true;
-    let signup_infor = req.body;
+app.post("/sign_up", (req, res) =>{
+    let could_sign_up = true;
+    let sign_up_infor = req.body;
     for (let data of datas){
-        if(data.mail === signup_infor.mail){
-            could_signup = false;
+        if(data.mail === sign_up_infor.mail){
+            could_sign_up = false;
         }
     }
-    res.send (could_signup);
-    datas.push(signup_infor);
+    res.send (could_sign_up);
+    datas.push(sign_up_infor);
     fs.writeFileSync("datas.json",JSON.stringify(datas));
 })
 
